@@ -4,6 +4,7 @@
 
 - **Search verticals:** web, news, images, videos, maps, places, reviews, shopping, scholar, patents and autocomplete, all under `https://api.serpkite.com/v1`
 - **Web content:** any public page as Markdown (`/v1/webpage`), HTML/PDF extraction, site maps and async crawls
+- **AI layer:** cited answers from live Google results (`/v1/answer` with SSE streaming, or `include_answer` on search and news), JSON-schema extraction and page summaries on `/v1/extract`, and async deep research with cited reports (`/v1/research`). Failed AI steps are free
 - **Scheduled monitors and batches** with signed webhooks
 - **Pricing:** prepaid credits that never expire; failed, empty and blocked requests are free. Free tier: 1,000 credits on signup, +1,500 for linking GitHub or Google, 1,000 every month. See [pricing](https://serpkite.com/pricing).
 
@@ -26,7 +27,8 @@ Get a key at [app.serpkite.com](https://app.serpkite.com), then read the [quicks
 | LangChain | `pip install langchain-serpkite` | [langchain-serpkite](https://github.com/SerpKite/langchain-serpkite) |
 | Vercel AI SDK | `npm install @serpkite/ai-sdk` | [serpkite-ai-sdk](https://github.com/SerpKite/serpkite-ai-sdk) |
 | n8n | `n8n-nodes-serpkite` | [n8n-nodes-serpkite](https://github.com/SerpKite/n8n-nodes-serpkite) |
-| Remote MCP server | `https://api.serpkite.com/v1/mcp` | [serpkite-mcp](https://github.com/SerpKite/serpkite-mcp) |
+| Dify | Dify Marketplace | [dify-serpkite](https://github.com/SerpKite/dify-serpkite) |
+| Remote MCP server (18 tools, incl. `answer` and `research`) | `https://api.serpkite.com/v1/mcp` | [serpkite-mcp](https://github.com/SerpKite/serpkite-mcp) |
 | SearXNG engine | | [searxng-serpkite](https://github.com/SerpKite/searxng-serpkite) |
 | GPT Researcher retriever | | [gpt-researcher-serpkite](https://github.com/SerpKite/gpt-researcher-serpkite) |
 
